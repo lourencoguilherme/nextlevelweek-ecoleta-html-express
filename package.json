@@ -4,11 +4,21 @@
   "description": "```\r fetch('https://servicodados.ibge.gov.br/api/v1/localidades/estados').then(function(res) {return res.json()}).then(function(data){console.log(data)})\r ```",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ./src/server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "celebrate": "^12.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "knex": "^0.20.13",
+    "nunjucks": "^3.2.1",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "supertest": "^4.0.2",
+    "jest": "^25.2.3"
   }
 }
