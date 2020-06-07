@@ -1,0 +1,14 @@
+{
+  "name": "ecoleta-frontend-html",
+  "version": "1.0.0",
+  "description": "```\r fetch('https://servicodados.ibge.gov.br/api/v1/localidades/estados').then(function(res) {return res.json()}).then(function(data){console.log(data)})\r ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
