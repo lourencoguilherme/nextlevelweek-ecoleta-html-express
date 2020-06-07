@@ -18,16 +18,16 @@ nunjucks.configure("src/views", {
 
 
 server.get("/", (req, res) => {
-    res.sendFile(__dirname + "/views/index.html")
+    return res.render(__dirname + "index.html")
 })
 
 server.get("/create-point", (req, res) => {
-    res.sendFile(__dirname + "/views/create-point.html")
+    return res.render(__dirname + "create-point.html")
 })
 
 
 server.get("/serch-results", (req, res) => {
-    res.sendFile(__dirname + "/views/serch-results.html")
+    return res.render(__dirname + "serch-results.html")
 })
 
 server.listen(3000)
